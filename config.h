@@ -5,6 +5,20 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+
+// 0: sloppy systray follows selected monitor, >0: pin systray to monitor X 
+static const unsigned int systraypinning = 0;
+// systray spacing 
+static const unsigned int systrayspacing = 2;
+// 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor
+static const int systraypinningfailfirst = 1;
+
+static const int systrayonleft = 0;
+
+// 0 means no systray
+static const int showsystray = 1;
+
+
 static const char *fonts[] = { "UbuntuMono Nerd Font:size=14:weight=bold:antialias=true:autohint:true" };
 static const char dmenufont[] = "UbuntuMono Nerd Font:size=12:antialias=true:autohint=true";
 
